@@ -5,10 +5,6 @@ class ContentRoot extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Expanded(
-      child: Container(
-        color: Colors.yellow,
-      ),
-    );
+    return const Placeholder();
   }
 }

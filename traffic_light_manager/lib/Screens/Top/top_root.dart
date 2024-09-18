@@ -5,9 +5,6 @@ class TopRoot extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: 200,
-      color: Colors.green,
-    );
+    return const Placeholder();
   }
 }
