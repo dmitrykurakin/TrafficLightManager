@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:traffic_light_manager/Styles/pic_border_decoration.dart';
 
 class LogoRoot extends StatelessWidget {
   const LogoRoot({super.key});
@@ -11,13 +12,7 @@ class LogoRoot extends StatelessWidget {
         child: Container(
           height: 180,
           width: 180,
-          decoration: BoxDecoration(
-            border: Border.all(
-              width: 5,
-              color: Colors.black,
-            ),
-            borderRadius: BorderRadius.circular(10),
-          ),
+          decoration: picBorderDecoration,
           child: Image.asset(
             'assets/pics/5900669.png',
             fit: BoxFit.fill,
