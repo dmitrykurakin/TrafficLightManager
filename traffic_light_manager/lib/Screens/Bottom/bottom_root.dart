@@ -7,7 +7,7 @@ class BottomRoot extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 200,
-      color: Colors.red,
+      color: Colors.redAccent,
     );
   }
 }
