@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:traffic_light_manager/Styles/common_text.dart';
 import 'package:traffic_light_manager/Styles/pic_border_decoration.dart';
 
 class PersonalInfoRoot extends StatelessWidget {
@@ -6,50 +7,47 @@ class PersonalInfoRoot extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       height: 180,
       width: 300,
-      color: Colors.red,
       child: Column(
         children: [
           Expanded(
-            child: Container(
-              color: Colors.grey,
-              child: Row(
-                children: [
-                  Container(
+            child: Row(
+              children: [
+                Container(
+                  width: 100,
+                  color: Colors.brown,
+                  child: Container(
+                    height: 100,
                     width: 100,
-                    color: Colors.brown,
-                    child: Container(
-                      height: 100,
-                      width: 100,
-                      decoration: picBorderDecoration,
-                      child: Image.asset('assets/pics/avatar.jpg'),
+                    decoration: picBorderDecoration,
+                    child: Image.asset('assets/pics/avatar.jpg'),
+                  ),
+                ),
+                const Expanded(
+                  child: Center(
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        SizedBox(height: 20),
+                        CommonText(text: 'Иванов-Петров'),
+                        CommonText(text: 'Иван Вячеславович'),
+                        SizedBox(height: 20),
+                      ],
                     ),
                   ),
-                  Expanded(
-                    child: Container(
-                      color: Colors.deepPurpleAccent,
-                      child: const Center(
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            SizedBox(height: 20),
-                            Text('Иванов-Петров'),
-                            Text('Иван Вячеславович'),
-                            SizedBox(height: 20),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ),
-                ],
-              ),
+                ),
+              ],
             ),
           ),
-          Container(
-            color: Colors.yellow,
+          const Divider(),
+          const SizedBox(
             height: 50,
+            child: CommonText(
+              text: 'Монтажник',
+              isBold: true,
+            ),
           ),
         ],
       ),

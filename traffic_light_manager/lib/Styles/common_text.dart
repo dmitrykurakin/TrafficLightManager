@@ -20,13 +20,11 @@ class CommonText extends StatelessWidget {
 
     size == null ? fontSize = 15 : fontSize = size!;
 
-    if (isBold == null) {
-      fontWeight = FontWeight.normal;
-    } else if (!isBold!) {
-      fontWeight = FontWeight.normal;
-    } else {
-      fontWeight = FontWeight.bold;
-    }
+    isBold == null
+        ? fontWeight = FontWeight.normal
+        : !isBold!
+            ? fontWeight = FontWeight.normal
+            : fontWeight = FontWeight.bold;
 
     return Text(
       text,
