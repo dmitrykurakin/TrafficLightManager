@@ -9,7 +9,7 @@ class TopRoot extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const SizedBox(
-      height: 200,
+      height: 180,
       child: Row(
         children: [
           LogoRoot(),
