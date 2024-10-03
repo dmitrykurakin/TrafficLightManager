@@ -14,23 +14,7 @@ class ContentRoot extends StatelessWidget {
           child: SizedBox(
             height: 600,
             child: Column(
-              children: [
-                Text(
-                  'Это зона контента',
-                  style: GoogleFonts.ubuntu(
-                    fontSize: 15,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-                const CommonText(
-                  text: 'Это второй текст',
-                  isBold: false,
-                ),
-                const CommonText(
-                  text: 'Это третий текст',
-                  size: 30,
-                )
-              ],
+              children: [],
             ),
           ),
         ),
