@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:traffic_light_manager/Styles/common_text.dart';
+import 'package:traffic_light_manager/Screens/Content/Cards/cards_root.dart';
+import 'package:traffic_light_manager/Screens/Content/Filters/filters_root.dart';
 
 class ContentRoot extends StatelessWidget {
   const ContentRoot({super.key});
@@ -10,11 +10,16 @@ class ContentRoot extends StatelessWidget {
     return Expanded(
       child: Container(
         color: Colors.yellow,
-        child: Center(
+        child: const Center(
           child: SizedBox(
             height: 600,
-            child: Column(
-              children: [],
+            child: Row(
+              children: [
+                Expanded(child: SizedBox()),
+                FiltersRoot(),
+                CardsRoot(),
+                Expanded(child: SizedBox()),
+              ],
             ),
           ),
         ),
