@@ -8,48 +8,51 @@ class FiltersRoot extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    List<FilterTemplate> filters = [
+      FilterTemplate(
+        text: 'CheckBoxes',
+        widget: CheckBoxFiltersTemp(),
+      ),
+      FilterTemplate(
+        text: 'CheckBoxe 2s',
+        widget: CheckboxTemp2(),
+      ),
+      FilterTemplate(
+        text: 'CheckBoxes 3',
+        widget: CheckBoxFiltersTemp(),
+      ),
+      FilterTemplate(
+        text: 'CheckBoxes',
+        widget: CheckBoxFiltersTemp(),
+      ),
+      FilterTemplate(
+        text: 'CheckBoxe 2s',
+        widget: CheckboxTemp2(),
+      ),
+      FilterTemplate(
+        text: 'CheckBoxes 3',
+        widget: CheckBoxFiltersTemp(),
+      ),
+      FilterTemplate(
+        text: 'CheckBoxes',
+        widget: CheckBoxFiltersTemp(),
+      ),
+      FilterTemplate(
+        text: 'CheckBoxe 2s',
+        widget: CheckboxTemp2(),
+      ),
+      FilterTemplate(
+        text: 'CheckBoxes 3',
+        widget: CheckBoxFiltersTemp(),
+      ),
+    ];
+
     return Container(
       color: Colors.grey,
       width: 250,
-      child: const Column(
-        children: [
-          FilterTemplate(
-            text: 'CheckBoxes',
-            widget: CheckBoxFiltersTemp(),
-          ),
-          FilterTemplate(
-            text: 'CheckBoxe 2s',
-            widget: CheckboxTemp2(),
-          ),
-          FilterTemplate(
-            text: 'CheckBoxes 3',
-            widget: CheckBoxFiltersTemp(),
-          ),
-          FilterTemplate(
-            text: 'CheckBoxes',
-            widget: CheckBoxFiltersTemp(),
-          ),
-          FilterTemplate(
-            text: 'CheckBoxe 2s',
-            widget: CheckboxTemp2(),
-          ),
-          FilterTemplate(
-            text: 'CheckBoxes 3',
-            widget: CheckBoxFiltersTemp(),
-          ),
-          FilterTemplate(
-            text: 'CheckBoxes',
-            widget: CheckBoxFiltersTemp(),
-          ),
-          FilterTemplate(
-            text: 'CheckBoxe 2s',
-            widget: CheckboxTemp2(),
-          ),
-          FilterTemplate(
-            text: 'CheckBoxes 3',
-            widget: CheckBoxFiltersTemp(),
-          ),
-        ],
+      child: ListView(
+        padding: const EdgeInsets.all(8),
+        children: filters,
       ),
     );
   }

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:traffic_light_manager/Screens/Content/Filters/FilterTemplate/checkbox_filters_temp.dart';
 import 'package:traffic_light_manager/Styles/common_text.dart';
 
 class FilterTemplate extends StatelessWidget {
@@ -10,7 +9,7 @@ class FilterTemplate extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.grey,
+      margin: const EdgeInsets.all(5),
       child: Column(
         children: [
           CommonText(
