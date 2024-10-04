@@ -3,20 +3,22 @@ import 'package:traffic_light_manager/Screens/Content/Filters/FilterTemplate/che
 import 'package:traffic_light_manager/Styles/common_text.dart';
 
 class FilterTemplate extends StatelessWidget {
-  const FilterTemplate({super.key});
+  final String text;
+  final Widget widget;
+  const FilterTemplate({super.key, required this.text, required this.widget});
 
   @override
   Widget build(BuildContext context) {
     return Container(
       color: Colors.grey,
-      child: const Column(
+      child: Column(
         children: [
           CommonText(
-            text: 'Checkboxes',
+            text: text,
             isBold: true,
             size: 20,
           ),
-          CheckBoxFiltersTemp()
+          widget,
         ],
       ),
     );
