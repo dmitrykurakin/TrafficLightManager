@@ -6,8 +6,9 @@ class CardsRoot extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 800,
       color: Colors.greenAccent,
+      child: Text(
+          'lojsdfjgkhdfg   kjdsfhdfgd lojsdfjgkhdfgkjdsfhdfgd lojsdfjgkhdfgkjdsfhdfgd lojsdfjgkhdfgkjdsfhdfgd lojsdfjgkhdfgkjdsfhdfgd'),
     );
   }
 }
