@@ -7,9 +7,45 @@ class CardsRoot extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      width: 1300,
       color: Colors.greenAccent,
-      child: const Center(
-        child: SizedBox(child: TrafficlightCardShowcase()),
+      child: Center(
+        child: GridView.count(
+          crossAxisCount: 4,
+          childAspectRatio: 1.5,
+          mainAxisSpacing: 5,
+          crossAxisSpacing: 10,
+          children: const [
+            TrafficlightCardShowcase(),
+            TrafficlightCardShowcase(),
+            TrafficlightCardShowcase(),
+            TrafficlightCardShowcase(),
+            TrafficlightCardShowcase(),
+            TrafficlightCardShowcase(),
+            TrafficlightCardShowcase(),
+            TrafficlightCardShowcase(),
+            TrafficlightCardShowcase(),
+            TrafficlightCardShowcase(),
+            TrafficlightCardShowcase(),
+            TrafficlightCardShowcase(),
+            TrafficlightCardShowcase(),
+            TrafficlightCardShowcase(),
+            TrafficlightCardShowcase(),
+            TrafficlightCardShowcase(),
+            TrafficlightCardShowcase(),
+            TrafficlightCardShowcase(),
+            TrafficlightCardShowcase(),
+            TrafficlightCardShowcase(),
+            TrafficlightCardShowcase(),
+            TrafficlightCardShowcase(),
+            TrafficlightCardShowcase(),
+            TrafficlightCardShowcase(),
+            TrafficlightCardShowcase(),
+            TrafficlightCardShowcase(),
+            TrafficlightCardShowcase(),
+            TrafficlightCardShowcase(),
+          ],
+        ),
       ),
     );
   }
