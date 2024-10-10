@@ -7,7 +7,7 @@ class CardsRoot extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    List<TrafficlightCardShowcase> cardsList = randomCards();
+    List<TrafficlightCardShowcase> cardsList = randomCards(count: 20);
     return Container(
       width: 1300,
       color: Colors.greenAccent,
