@@ -32,6 +32,7 @@ class CommonText extends StatelessWidget {
         fontSize: fontSize,
         fontWeight: fontWeight,
       ),
+      overflow: TextOverflow.ellipsis,
     );
   }
 }
