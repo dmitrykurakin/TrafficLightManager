@@ -7,18 +7,16 @@ class ContentRoot extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Expanded(
-      child: Container(
-        color: Colors.yellow,
-        child: const Center(
+    return const Expanded(
+      child: Center(
+        child: SingleChildScrollView(
+          scrollDirection: Axis.horizontal,
           child: SizedBox(
-            height: 600,
+            width: 1600,
             child: Row(
               children: [
-                Expanded(child: SizedBox()),
                 FiltersRoot(),
                 CardsRoot(),
-                Expanded(child: SizedBox()),
               ],
             ),
           ),

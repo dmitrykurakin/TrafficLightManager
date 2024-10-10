@@ -49,7 +49,7 @@ class FiltersRoot extends StatelessWidget {
 
     return Container(
       color: Colors.grey,
-      width: 250,
+      width: 300,
       child: ListView(
         padding: const EdgeInsets.all(8),
         children: filters,
