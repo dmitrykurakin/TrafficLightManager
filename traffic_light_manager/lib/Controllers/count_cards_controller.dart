@@ -10,7 +10,9 @@ class CountCardsController extends GetxController {
   }
 
   minusOne() {
-    _countCards.value--;
+    if (_countCards.value > 0) {
+      _countCards.value--;
+    }
   }
 
   plusTen() {
@@ -18,6 +20,8 @@ class CountCardsController extends GetxController {
   }
 
   minusTen() {
-    _countCards.value = _countCards.value - 10;
+    if (_countCards.value > 9) {
+      _countCards.value = _countCards.value - 10;
+    }
   }
 }
