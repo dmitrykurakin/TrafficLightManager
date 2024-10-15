@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class CountCardsController extends GetxController {
@@ -22,6 +23,13 @@ class CountCardsController extends GetxController {
   minusTen() {
     if (_countCards.value > 9) {
       _countCards.value = _countCards.value - 10;
+    } else {
+      Get.snackbar(
+        'Error',
+        'You cannot click',
+        icon: const Icon(Icons.warning),
+        backgroundColor: Colors.redAccent,
+      );
     }
   }
 }

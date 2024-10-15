@@ -12,12 +12,13 @@ class PlusMinus1Widget extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceAround,
       children: [
-        GFButton(
-          onPressed: () {
-            controller.minusOne();
-          },
-          text: '-1',
-          type: GFButtonType.outline2x,
+        Obx(
+          () => GFButton(
+            onPressed:
+                controller.counntCards > 0 ? () => controller.minusOne() : null,
+            text: '-1',
+            type: GFButtonType.outline2x,
+          ),
         ),
         GFButton(
           onPressed: () {
