@@ -29,7 +29,7 @@ class TrafficlightCardHead extends StatelessWidget {
               ],
             ),
           ),
-          Expanded(child: SizedBox()),
+          Spacer(),
           SizedBox(
             width: 300,
             child: Row(
