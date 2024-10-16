@@ -1,12 +1,12 @@
 import 'package:traffic_light_manager/Screens/Content/Cards/trafficlight_card_showcase.dart';
 import 'package:faker/faker.dart';
 
-List<TrafficlightCardShowcase> randomCards() {
+List<TrafficlightCardShowcase> randomCards({required int count}) {
   Faker faker = Faker();
 
   List<TrafficlightCardShowcase> cards = [];
 
-  for (var i = 0; i < 40; i++) {
+  for (var i = 0; i < count; i++) {
     TrafficlightCardShowcase card = TrafficlightCardShowcase(
       serial: faker.lorem.word(),
       status: 'Работает',
