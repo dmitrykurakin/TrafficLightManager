@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:traffic_light_manager/Screens/Content/Cards/trafficlight_card_showcase.dart';
+import 'package:traffic_light_manager/Screens/Content/Showcase/Cards/trafficlight_card_showcase.dart';
 import 'package:traffic_light_manager/Utils/random_lighttrafic_cards.dart';
 
 class CountCardsController extends GetxController {

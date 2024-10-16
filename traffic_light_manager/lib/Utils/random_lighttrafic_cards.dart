@@ -1,4 +1,4 @@
-import 'package:traffic_light_manager/Screens/Content/Cards/trafficlight_card_showcase.dart';
+import 'package:traffic_light_manager/Screens/Content/Showcase/Cards/trafficlight_card_showcase.dart';
 import 'package:faker/faker.dart';
 
 List<TrafficlightCardShowcase> randomCards({required int count}) {

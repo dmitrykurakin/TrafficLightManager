@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:traffic_light_manager/Screens/Content/TrafficlightCard/trafficlight_card_head.dart';
 
 class TrafficlightCardRoot extends StatelessWidget {
   const TrafficlightCardRoot({super.key});
@@ -9,10 +10,7 @@ class TrafficlightCardRoot extends StatelessWidget {
       color: Colors.white60,
       child: Column(
         children: [
-          Container(
-            height: 100,
-            color: Colors.yellow,
-          ),
+          const TrafficlightCardHead(),
           Container(
             color: Colors.greenAccent,
           )
