@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:traffic_light_manager/Screens/Content/Cards/cards_root.dart';
-import 'package:traffic_light_manager/Screens/Content/Filters/filters_root.dart';
+
+//import 'package:traffic_light_manager/Screens/Content/Showcase/showcase_root.dart';
+import 'package:traffic_light_manager/Screens/Content/TrafficlightCard/trafficlight_card_root.dart';
 
 class ContentRoot extends StatelessWidget {
   const ContentRoot({super.key});
@@ -13,12 +14,8 @@ class ContentRoot extends StatelessWidget {
           scrollDirection: Axis.horizontal,
           child: SizedBox(
             width: 1600,
-            child: Row(
-              children: [
-                FiltersRoot(),
-                CardsRoot(),
-              ],
-            ),
+            child: TrafficlightCardRoot(),
+            //ShowcaseRoot(),
           ),
         ),
       ),
