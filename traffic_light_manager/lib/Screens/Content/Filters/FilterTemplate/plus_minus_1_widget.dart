@@ -14,8 +14,9 @@ class PlusMinus1Widget extends StatelessWidget {
       children: [
         Obx(
           () => GFButton(
-            onPressed:
-                controller.counntCards > 0 ? () => controller.minusOne() : null,
+            onPressed: controller.cards.isNotEmpty
+                ? () => controller.minusOne()
+                : null,
             text: '-1',
             type: GFButtonType.outline2x,
           ),

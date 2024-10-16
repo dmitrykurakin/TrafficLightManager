@@ -13,8 +13,7 @@ class CountCards extends StatelessWidget {
     return Center(
       child: Obx(
         () => CommonText(
-          text: controller.counntCards.toString(),
-          isBold: true,
+          text: controller.cards.length.toString(),
         ),
       ),
     );

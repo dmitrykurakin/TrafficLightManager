@@ -1,28 +1,34 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:traffic_light_manager/Screens/Content/Cards/trafficlight_card_showcase.dart';
+import 'package:traffic_light_manager/Utils/random_lighttrafic_cards.dart';
 
 class CountCardsController extends GetxController {
-  final _countCards = 0.obs;
+  final _cards = <TrafficlightCardShowcase>[].obs;
 
-  int get counntCards => _countCards.value;
+  List<TrafficlightCardShowcase> get cards => _cards;
 
   plusOne() {
-    _countCards.value++;
+    _cards.add(randomCards(count: 1).first);
   }
 
   minusOne() {
-    if (_countCards.value > 0) {
-      _countCards.value--;
+    if (cards.isNotEmpty) {
+      _cards.removeAt(0);
     }
   }
 
   plusTen() {
-    _countCards.value = _countCards.value + 10;
+    for (var i = 0; i < 10; i++) {
+      _cards.add(randomCards(count: 1).first);
+    }
   }
 
   minusTen() {
-    if (_countCards.value > 9) {
-      _countCards.value = _countCards.value - 10;
+    if (_cards.length > 9) {
+      for (var i = 0; i < 10; i++) {
+        _cards.removeAt(0);
+      }
     } else {
       Get.snackbar(
         'Error',
