@@ -1,17 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:traffic_light_manager/Screens/Content/TrafficlightCard/trafficlight_card_foto_gallery.dart';
+import 'package:traffic_light_manager/Screens/Content/TrafficlightCard/trafficlight_card_info.dart';
 
 class TrafficlightCardBody extends StatelessWidget {
   const TrafficlightCardBody({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Expanded(
+    return const Expanded(
       child: Row(
         children: [
-          const TrafficlightCardFotoGallery(),
+          TrafficlightCardFotoGallery(),
           Expanded(
-            child: Container(),
+            child: TrafficlightCardInfo(),
           )
         ],
       ),

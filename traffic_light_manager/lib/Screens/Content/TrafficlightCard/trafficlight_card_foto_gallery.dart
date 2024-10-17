@@ -19,8 +19,8 @@ class TrafficlightCardFotoGallery extends StatelessWidget {
       child: Center(
         child: Container(
           alignment: Alignment.center,
-          width: 400,
-          height: 300,
+          width: 600,
+          height: 400,
           decoration: picBorderDecoration,
           child: ListView(
             scrollDirection: Axis.horizontal,
