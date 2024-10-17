@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:traffic_light_manager/Screens/Content/Filters/FilterTemplate/checkbox_filters_temp.dart';
-import 'package:traffic_light_manager/Screens/Content/Filters/FilterTemplate/checkbox_temp_2.dart';
-import 'package:traffic_light_manager/Screens/Content/Filters/FilterTemplate/count_cards.dart';
-import 'package:traffic_light_manager/Screens/Content/Filters/FilterTemplate/filter_template.dart';
-import 'package:traffic_light_manager/Screens/Content/Filters/FilterTemplate/plus_minus_10_widget.dart';
-import 'package:traffic_light_manager/Screens/Content/Filters/FilterTemplate/plus_minus_1_widget.dart';
+import 'package:traffic_light_manager/Screens/Content/Showcase/Filters/FilterTemplate/checkbox_filters_temp.dart';
+import 'package:traffic_light_manager/Screens/Content/Showcase/Filters/FilterTemplate/checkbox_temp_2.dart';
+import 'package:traffic_light_manager/Screens/Content/Showcase/Filters/FilterTemplate/count_cards.dart';
+import 'package:traffic_light_manager/Screens/Content/Showcase/Filters/FilterTemplate/filter_template.dart';
+import 'package:traffic_light_manager/Screens/Content/Showcase/Filters/FilterTemplate/plus_minus_10_widget.dart';
+import 'package:traffic_light_manager/Screens/Content/Showcase/Filters/FilterTemplate/plus_minus_1_widget.dart';
 
 class FiltersRoot extends StatelessWidget {
   const FiltersRoot({super.key});
