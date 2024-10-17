@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:getwidget/getwidget.dart';
+import 'package:traffic_light_manager/Controllers/navigation_controller.dart';
 import 'package:traffic_light_manager/Styles/common_text.dart';
 
 class TrafficlightCardHead extends StatelessWidget {
@@ -6,13 +9,22 @@ class TrafficlightCardHead extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    NavigationController controller = Get.find();
     return Container(
       height: 100,
       color: Colors.yellow,
-      child: const Row(
+      child: Row(
         children: [
-          Spacer(),
-          SizedBox(
+          const Spacer(),
+          GFButton(
+            onPressed: () {
+              controller.isShowcase = true;
+            },
+            text: 'Назад',
+            icon: const Icon(Icons.arrow_back),
+          ),
+          const Spacer(),
+          const SizedBox(
             width: 300,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -29,8 +41,8 @@ class TrafficlightCardHead extends StatelessWidget {
               ],
             ),
           ),
-          Spacer(),
-          SizedBox(
+          const Spacer(),
+          const SizedBox(
             width: 300,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -43,7 +55,7 @@ class TrafficlightCardHead extends StatelessWidget {
               ],
             ),
           ),
-          Spacer(),
+          const Spacer(),
         ],
       ),
     );

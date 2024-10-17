@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:traffic_light_manager/Controllers/navigation_controller.dart';
 import 'package:traffic_light_manager/Styles/common_text.dart';
 
 class TrafficlightCardShowcase extends StatelessWidget {
@@ -21,6 +23,7 @@ class TrafficlightCardShowcase extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    NavigationController controller = Get.find();
     return SizedBox(
       height: 200,
       width: 300,
@@ -30,6 +33,7 @@ class TrafficlightCardShowcase extends StatelessWidget {
           height: 195,
           width: 295,
           child: ListTile(
+            onTap: () => controller.isShowcase = false,
             title: CommonText(
               text: serial,
               size: 25,

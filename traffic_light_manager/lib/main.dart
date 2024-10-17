@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:traffic_light_manager/Controllers/count_cards_controller.dart';
+import 'package:traffic_light_manager/Controllers/navigation_controller.dart';
 import 'package:traffic_light_manager/Screens/root.dart';
 import 'package:get/get.dart';
 
@@ -7,6 +8,7 @@ void main() {
   runApp(const GetMaterialApp(home: MyApp()));
 
   Get.put(CountCardsController());
+  Get.put(NavigationController());
 }
 
 class MyApp extends StatelessWidget {
